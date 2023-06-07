@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="servicosderede.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="titulo"><strong><i><u>Serviços de Rede</i></u></strong></strong></div>
+
+
+        <div class="cabecalho">
+    <p><u><a href="#ModeloOSI">-MODELO OSI</a></p>
+    <p><a href="#ModeloTCP/IP">-MODELO TCP/IP</a></p>
+    <p><a href="#UDP">-UDP</a></p>
+    <p><a href="#FTP">-FTP</a></p>
+    <p><a href="#DNS">-DNS</a></p>
+    <p><a href="#DHCP">-DHCP</a></p>
+    <p><a href="#FTP">-FTP</a></p>
+    <p><a href="#HTTP/HTTPS">-HTTP/HTTPS</a></p>
+    <p><a href="#WEBSERVER">-WEBSERVER</a></u></p>
+    </div>
+
+    <div class="serviçosderede">
+      <div class="texto"><u><strong>Bom, precisamos primeiro saber o que são os serviços de rede:</strong></u>
+       <br>Serviço de rede pode ser definido como um conjunto de operações que uma camada oferece à camada superior, sendo estabelecidas as operações que a camada executa em nome dos usuários e informado como essas operações são implementadas.</br></div>
+       
+       <section id="ModeloOSI">
+    <p><div class="titulo">Modelo OSI</a></div></p>
+        </section>
+
+        <div class="texto">
+       <p> Trata-se de uma arquitetura modelo que divide as redes de computadores em 7 camadas para obter camadas de abstração. Cada protocolo realiza a inserção de uma funcionalidade assinalada a uma camada específica.
+Utilizando o Modelo OSI é possível realizar comunicação entre máquinas distintas e definir diretivas genéricas para a elaboração de redes de computadores independente da tecnologia utilizada, sejam essas redes de curta, média ou longa distância.</p>
+   </div>    
+
+<p><center><img src="camdas.jpg" height="400" width="400"></center></p>
+
+<section id="ModeloTCP/IP">
+<div class="titulo">Modelo TCP/IP</a></div>
+</section>
+
+<div class="texto">
+<p>Arquitetura TCP/IP é um conjunto de protocolos de comunicação entre computadores em rede que se caracteriza pela definição de um modelo padrão de camadas para implementação na arquitetura de rede. 
+Com objetivo semelhante ao do modelo OSI no que diz respeito à divisão da arquitetura em camadas, o TCP/IP consiste na junção dos protocolos TCP (Transmission Control Protocol – Protocolo de Controle de Transmissão) e o IP (Internet Protocol – Protocolo de Inter-rede), dois dos mais utilizados.
+<br>No modelo TCP/IP encontramos 4 camadas, seriam elas: Aplicação, Transporte, Rede e Interface de rede.</br></p>
+
+<strong><u>Aplicação:</strong></u>
+<br>A camada de aplicação é o topo da arquitetura TCP/IP, tratada de forma monolítica, onde são realizadas a maior parte das requisições para execução de tarefas na rede. Ela faz a comunicação entre os programas e os protocolos de transporte e é responsável por tudo que está relacionado aos serviços de comunicação que visam a interação junto ao usuário.</br>
+</p>
+
+<p><strong><u>Transporte:</strong></u>
+<br>A camada de transporte é a segunda camada de cima para baixo na hierarquização da arquitetura TCP/IP, e corresponde igualmente à mesma camada no modelo OSI. Neste nível são executadas ações relacionadas à confiabilidade e integridade dos dados por meio de funções como o controle de fluxo, controle de erro, sequenciação e multiplexação de mensagens.
+Os protocolos definidos para esta camada são o UDP (User Datagram Protocol) e o TCP (Transmission Control Protocol), com o objetivo de garantir a conversação entre dois hosts.</br>
+</p>
+
+<strong><u>Internet:</strong></u>
+<br>A camada de internet, também conhecida como inter-redes, é responsável pela permissão de envio de pacotes por hosts a qualquer rede e pela garantia de que esses dados cheguem ao seu destino final. Equivalente ao que é operacionalizado na camada de rede do modelo OSI, na arquitetura TCP/IP a camada de internet tem como embasamento os protocolos IP (Internet Protocol) e ICMP (Internet Control Message Protocol).
+</p>
+
+<strong><u>Interface de Rede:</strong></u>
+<br>Esta é a camada de base da arquitetura TCP/IP, correspondente às camadas de enlace de dados e física do OSI, onde ocorre a conexão básica do host com a rede por meio de algum protocolo capaz de enviar pacotes IP. É por meio desta camada que é possível transmitir dados a outros computadores dentro de uma mesma rede física, além de realizar o envio do datagrama recebido pela camada de internet através de meios físicos.
+Para se manter em funcionamento a camada de Interface de rede utiliza como principais protocolos: Ethernet para Redes Locais (LAN – Local Area Network) e PPP (Point-to-Point Protocol) para Redes de Longa Distância (WAN – Wide Area Network).
+</p>
+</div>
+
+<center><img src="tcpip.png" height="400" width="400"></center>
+
+<section id="UDP">
+<div class="titulo"><a class="button">UDP</a></div>
+
+<div class="texto">
+<p>O protocolo UDP (sigla para User Datagram Protocol) tem, como característica essencial, um atributo que pode parecer esquisito para os iniciantes no tema - a falta de confiabilidade.
+    Isso significa que, através da utilização desse protocolo, pode-se enviar datagramas de uma máquina à outra, mas sem garantia de que os dados enviados chegarão intactos e na ordem correta.</p>
+
+    <strong><u>Como funciona o Protocolo UDP:</u></strong>
+    <br>O UDP é um protocolo que não é voltado à conexão. Isso significa que o "aperto de mão", ou, tecnicamente, handshake, não é necessário para que se estabeleça uma comunicação.
+    Dessa forma, com o UDP é possível enviar, pela mesma saída, dados para diversas máquinas diferentes sem problema algum.</p>
+</div></section>
+
+<section id="FTP">
+<div class="titulo"><a class="button">FTP</a></div>
+
+<div class="texto"><p>O FTP (File Transfer Protocol) permite que desenvolvedores de sites promovam mudanças de maneira conveniente e segura, mesmo que você tenha que transferir um grande número de arquivos.<br>File Transfer Protocol (FTP) é composto pelo conjunto de regras que diz para os computadores como transferir arquivos entre diferentes sistemas online. O protocolo FTP pode ser usado dentro de uma rede interna de computadores, ou online entre diferentes servidores web.</p></div>
+</section>
+
+<section id="DNS">
+<div class="titulo"><a class="button">DNS</a></div>
+
+<div class="texto">
+<br>O nome DNS significa Domain Name System, ou sistema de nomes de domínios, e contém o registro de todos os domínios da internet. A sua função não é hospedar sites ou aplicações que criamos, mas sim permitir que as requisições cheguem aos locais corretos.
+Um servidor DNS é feito única e exclusivamente para a tradução de domínios para endereços de IP, então vamos entender como os servidores DNS podem realizar a sua tarefa e como são passadas as requisições para ele.
+</p></div>
+</section>
+
+<section id="DHCP">
+<div class="titulo"><a class="button">DHCP</a></div>
+
+<div class="texto"><p>O protocolo DHCP é um protocolo de cliente/servidor que fornece automaticamente um host IP (Protocolo de Internet) com seu endereço IP e outras informações de configuração relacionadas, como a máscara de sub-rede e o gateway padrão. OS RFCs 2131 e 2132 definem o DHCP como um padrão IETF (Internet Engineering Task Force) com base no BOOTP (Bootstrap Protocol), um protocolo com o qual o DHCP compartilha muitos detalhes de implementação. O DHCP permite que os hosts obtenham as informações de configuração TCP/IP necessárias de um servidor DHCP.</p></div>
+ </section>      
+
+<section id="HTTP/HTTPS">
+<div class="titulo"><a class="button">HTTP/HTTPS</a></div>
+
+<div class="texto">
+    
+    <strong><u>HTTP:</strong></u>
+
+    <p>As comunicações em uma rede são feitas por um conjunto de regras e procedimentos chamadas de protocolo Link. O protocolo HTTP, Hypertext Transfer Protocol, foi inicialmente desenvolvido para permitir a comunicação com um servidor web, a princípio, o método existente era apenas o de “pegar” (GET) o conteúdo de um servidor.
+Com o passar do tempo, surgiu a necessidade de não somente pedir informações do servidor, mas também de passar as informações. Atualmente sabemos que na Web, não apenas pedimos como também mandamos informações</p></div>
+</div>
+
+<div class="texto">
+    <strong><u>HTTPS:</strong></u>
+    HTTPS ou Hyper Text Transfer Protocol Secure, é um protocolo da internet que visa realizar a comunicação de dispositivos com os servidores do mundo todo. O protocolo HTTPS surgiu como uma evolução ao procolo antecessor o HTTP, a diferença entre eles é que o HTTPS possui a comunicação de dispositivos criptografada.
+    Por conta da criptografia, o HTTPS se torna um protocolo muito mais seguro, tanto que na maioria dos navegadores, sites que utilizam HTTPS, possuem a descrição Site Seguro e um cadeado fechado, simbolizando que aquele site possui um certificado SSL ativo e instalado. Isso, além de gerar segurança aos visitantes, acabou se tornando muito importante para que sites tenham um bom ranqueamento nas pesquisas do Google.</div>
+<p></p>
+</sections>
+
+<section id="WEBSERVER">
+    <div class="titulo"><a class="button">WEBSERVER</a></div>
+<div class="texto">
+    Um web server é um sistema computacional que hospeda e fornece acesso aos conteúdos e aplicações através da internet. Geralmente contratado como um serviço, esse servidor recebe e processa as solicitações feitas por navegadores através de protocolos de rede como o HTTP ou HTTPS.
+
+Um servidor que presta esse tipo de serviço pode ser um computador físico ou instância de um datacenter, que armazena e disponibiliza o conteúdo para ser acessado por meio da internet.
+
+Esse acesso geralmente é feito por computadores e dispositivos móveis através de solicitações feitas por browsers, ou seja, softwares navegadores como o Google Chrome e Microsoft Edge.
+
+Essas solicitações incluem o endereço do conteúdo desejado, como por exemplo uma página HTML, um arquivo de áudio, vídeo ou imagem.
+
+Os servidores web são responsáveis por hospedar sites, aplicativos, serviços de e-mail, armazenamento em nuvem e outros serviços online.
+</div>
+</section>
+
+
+
+<p><div class="tfoto">Esse é o meu trabalho no Cisco Packet Tracer:</div></p>
+<p><center><img src="cisco.png" whidt="300" height="300"></center></p>
+<center><p><h2>E ESSES FORAM OS SERVIÇOS DE REDE</h2></p></center>
+<center><p><h2>😁seguuuura😁🦓</h2></p></center>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
