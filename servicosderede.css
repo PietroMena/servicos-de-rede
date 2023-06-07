@@ -1,0 +1,48 @@
+.titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style:italic;
+   
+    background-image:linear-gradient(to left,black ,#4e4f57,grey);
+    background-size: 500% 100%;
+    animation: degrade-animado 1s infinite alternate;
+}
+
+
+
+.cabecalho{
+    background-image:-webkit-linear-gradient(#A9A9A9,#00FA9A, #5808c7);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.texto{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-image:-webkit-linear-gradient(#A9A9A9,#00FA9A,#5808c7);
+}
+
+.ModeloOSI{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+ }
+   100%{
+    background-position-x: 100%;
+   }  
+
+ }
+
+ .tfoto{
+    text-align: center;
+    font-size:30px;
+    text-decoration:overline;
+    color:crimson;
+ }
